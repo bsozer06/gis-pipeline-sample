@@ -1,4 +1,4 @@
-# Building a GIS Data Pipeline — Learning Summary
+# Building a GIS Data Pipeline — Vector Data
 
 A reference guide built up step by step. The running example: a public dataset of
 **point locations** (e.g. bike-share stations) that we clean, reproject, join to
@@ -250,5 +250,5 @@ Each function is one stage — testable in isolation, re-runnable without touchi
 ## Where to grow next
 
 1. **Incremental / scheduled updates** — upserts + watermarks instead of replace-all; schedule with cron/Airflow/Prefect.
-2. **Raster data** — `rasterio` / `rioxarray`; "zonal statistics" is the raster cousin of the spatial join.
+2. **Raster data** — `rasterio` / `rioxarray`; "zonal statistics" is the raster cousin of the spatial join. *(See [gis-pipeline-raster.md](gis-pipeline-raster.md).)*
 3. **Bigger-than-memory** — `dask-geopandas`, DuckDB spatial extension, or keep it all in PostGIS.
